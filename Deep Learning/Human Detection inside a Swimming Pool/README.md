@@ -33,7 +33,7 @@ This project implements real-time object detection and tracking using a YOLO-bas
 1. Run the script using the command:
 
 ```bash
-python human_detectionpython human_detection.py
+python human_detection.py
 ```
 
 2. The video feed from the camera will be processed in real-time to detect and track humans in unsafe pool areas.
