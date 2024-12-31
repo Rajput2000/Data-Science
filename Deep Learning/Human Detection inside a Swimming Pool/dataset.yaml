@@ -1,0 +1,9 @@
+# train and val data
+train: C:/Users/Latitude 5550/Downloads/fyp/images/train
+val: C:/Users/Latitude 5550/Downloads/fyp/images/val
+
+# number of classes
+nc: 1
+
+# class names
+names: ['human']
