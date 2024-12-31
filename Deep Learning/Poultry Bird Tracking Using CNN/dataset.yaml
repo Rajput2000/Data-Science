@@ -1,0 +1,9 @@
+# train and val data
+train: C:/Users/Latitude 5550/Desktop/FYP/project software/Main_Work/datasets/images/train
+val: C:/Users/Latitude 5550/Desktop/FYP/project software/Main_Work/datasets/images/val
+
+# number of classes
+nc: 1
+
+# class names
+names: ['chicken']

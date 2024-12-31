@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Poultry Live Feed</title>
+    <style>
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+        font-family: Arial, sans-serif;
+      }
+
+      #video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      }
+
+      #bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        /*width: 100%;*/
+        height: 75%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Live Stream: Tracking The LiveStock in Rajput Poultry Housing</h1>
+    <div id="video-container">
+      <img id="bg" src="{{ url_for('video_feed') }}" style="width: 75%" />
+    </div>
+  </body>
+</html>
