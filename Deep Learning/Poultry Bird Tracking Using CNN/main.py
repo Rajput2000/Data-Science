@@ -11,7 +11,7 @@ from email.message import EmailMessage
 from flask import Flask, render_template, Response, stream_with_context, request
 
 # Set working directory
-os.chdir("/home/rajput/Desktop")
+os.chdir("/home/Desktop")
 
 def send_ip():
     """
@@ -23,14 +23,14 @@ def send_ip():
     ip_address = subprocess.getoutput('hostname -I')
 
     # Set email credentials and recipients
-    email_address = "raji.m1700233@st.futminna.edu.ng"
-    email_password = "Raji2000"
+    email_address = "SENDER-EMAIL"
+    email_password = "SENDER-PASSWORD"
     
     # Create email message
     msg = EmailMessage()
     msg['Subject'] = "IP ADDRESS"
     msg['From'] = email_address
-    msg['To'] = ["rajigbenga5@gmail.com"]
+    msg['To'] = ["RECEIVER-EMAIL"]
     msg.set_content(f"Use this IP address {ip_address}:5000")
 
     # Send email
